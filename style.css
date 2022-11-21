@@ -123,7 +123,7 @@ main {
 .post:hover,
 .group:hover,
 .username:hover,
-.header p:hover {
+.header button:hover {
   color: var(--blue);
 }
 .card-footer {
@@ -152,6 +152,7 @@ main {
 }
 
 .header button {
+  cursor: pointer;
   border: 0;
   background-color: transparent;
   color: var(--dark-grayish-blue);
