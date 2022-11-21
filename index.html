@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    </style>
+  </head>
+  <body>
+
+    <main id="notifications">
+      <div class="header">
+        <h1>Notifications<span id="notification-count">3</span></h1>
+        <button class="btn" onclick="MarkAsRead()"><p>Mark all as read</p></button>
+      </div>
+      <div class="grid">
+          <div class="card unread">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="">
+            <div class="card-body">
+              <p><span class="username">Mark Webber</span> reacted to your recent post <span class="post">My first tournament today!</span></p>
+            </div>
+            <div class="card-footer">
+              <div class="date">1m ago</div>
+            </div>
+          </div>
+          <div class="card unread">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="">
+            <div class="card-body">
+              <p><span class="username">Angela Gray</span> followed you</p>
+            </div>
+            <div class="card-footer">
+              <div class="date">5m ago</div>
+            </div>
+          </div>
+          <div class="card unread">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+            <div class="card-body">
+              <p><span class="username">Jacob Thompson</span> has joined your group <span class="group">Chess Club</span></p>
+            </div>
+            <div class="card-footer">
+              <div class="date">1 day ago</div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+            <div class="card-body">
+              <p><span class="username">Rizky Hasanuddin</span> sent you a private message</p>
+            </div>
+            <div class="card-footer">
+              <div class="date">5 days ago</div>
+            </div>
+            <div class="message">Hello, thanks for setting up the Chess
+              Club. I've been a member for a few weeks now and I'm already having lots of
+              fun and improving my game.</div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+            <div class="card-body">
+              <p><span class="username">Kimberly Smith</span> commented on your picture</p>
+            </div>
+            <img class="card-image" src="./assets/images/image-chess.webp" alt="">
+            <div class="card-footer">
+              <div class="date">1 week ago</div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+            <div class="card-body">
+              <p class="unread"><span class="username">Nathan Peterson</span> reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span></p>
+            </div>
+            <div class="card-footer">
+              <div class="date">2 weeks ago</div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="">
+            <div class="card-body">
+              <p><span class="username">Anna kim</span> left the group <span class="group">Chess Club</span></p>
+            </div>
+            <div class="card-footer">
+              <div class="date">2 weeks ago</div>
+            </div>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
